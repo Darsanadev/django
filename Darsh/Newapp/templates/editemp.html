@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee</title>
+</head>
+<body style="text-align: center;">
+    <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h1> Edit karoo betaaa</h1>
+        <input type="text" name="name" placeholder="Name" value="{{emp.name}}"><br><br>
+        <input type="text" name="place" placeholder="place" value="{{emp.place}}"><br><br>
+        <input type="number" name="mobile" placeholder="Mobile" value="{{emp.mobile}}"><br><br>
+        <img src="{{emp.image.url}}" width="100px" height="100px"><br><br>
+        <input type="file" name="image"> <br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
